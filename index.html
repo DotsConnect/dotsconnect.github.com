@@ -13,30 +13,52 @@
 
       <!-- Add your custom styles here -->
       <style>
+         /* Main header styles */
          .jumbotron.subhead {
              display: flex;
-             align-items: center; /* Center vertically */
-             justify-content: flex-start; /* Align items horizontally */
+             justify-content: center; /* Centers the content horizontally */
+             align-items: center; /* Centers the content vertically */
+             position: relative;
+             height: 200px; /* Adjust the height as needed */
+             background-color: #f5f5f5; /* You can set a background color if needed */
          }
-         
+      
+         /* Styles for the centered content */
+         .header-content {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+         }
+      
          .header-image {
-             width: 100px; /* Adjust size as needed */
-             margin-right: 20px; /* Add some space between the image and text */
+             width: 100px; /* Adjust the image size */
+             margin-bottom: 10px; /* Space between the image and the title */
          }
-         
-         .header-text {
-             display: inline-block;
+      
+         .lab-title {
+             font-size: 2em; /* Adjust the size of the title */
+             margin: 0;
+         }
+      
+         /* Styles for the "University of Manitoba" text */
+         .university-text {
+             position: absolute;
+             bottom: 10px; /* Adjust the distance from the bottom */
+             right: 10px; /* Adjust the distance from the right */
+             font-size: 1em; /* Adjust the text size */
+             margin: 0;
          }
       </style>
+
    </head>
    <body>
       <div class="container">
          <header class="jumbotron subhead" id="overview">
-            <img src="images/RAL.jpg" alt="Lab Logo" class="header-image">
-            <div class="header-text">
-               <p class="lead">University of Manitoba</p>
-               <h1>Robot Autonomy Lab</h1>
+            <div class="header-content">
+               <img src="images/RAL.jpg" alt="Lab Logo" class="header-image">
+               <h1 class="lab-title">Robot Autonomy Lab</h1>
             </div>
+            <p class="lead university-text">University of Manitoba</p>
          </header>
          <div class="masthead">
             <div class="navbar">
