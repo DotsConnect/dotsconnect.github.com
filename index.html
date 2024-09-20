@@ -21,17 +21,14 @@
              position: relative;
              height: 200px; /* Adjust the height as needed */
              background-color: #000000; /* You can set a background color if needed */
+             width: 100%; /* Ensure the header spans the full width */
          }
       
          /* Styles for the centered content */
-         .header-content {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-         }
-      
          .header-image {
-             width: 460px; /* Adjust the image size */
+            width: 460px; /* Adjust the image size */
+            margin-bottom: 20px; /* Space between the image and the bottom text */
+
          }
       
 /*          .lab-title {
@@ -46,6 +43,7 @@
              right: 10px; /* Adjust the distance from the right */
              font-size: 2em; /* Adjust the text size */
              margin: 0;
+             width: auto; /* Auto width to wrap text properly */
          }
       </style>
 
@@ -53,10 +51,7 @@
    <body>
       <div class="container">
          <header class="jumbotron subhead" id="overview">
-            <div class="header-content">
-               <img src="images/RAL.jpg" alt="Robot Autonomy Lab" class="header-image">
-<!--                <h1 class="lab-title">Robot Autonomy Lab</h1> -->
-            </div>
+            <img src="images/RAL.jpg" alt="Robot Autonomy Lab" class="header-image">
             <p class="lead university-text">University of Manitoba</p>
          </header>
          <div class="masthead">
