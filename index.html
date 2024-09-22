@@ -19,7 +19,7 @@
             align-items: center;
             justify-content: center;
             position: relative;
-/*             height: 168px; */
+            height: 140px;
             background-color: #000000;
             width: 100%;
             margin: 0; /* Remove any default margins */
@@ -27,8 +27,9 @@
         }
 
         .header-image {
+            flex-shrink: 1;
             max-width: 40%; /* Make sure it scales down if the view is narrower than the image */
-            height: auto; /* Maintain aspect ratio */
+            width: auto; /* Maintain aspect ratio */
         }
 
         .university-text {
